@@ -40,9 +40,9 @@ function Home() {
       <section className="home-hero-section">
         <div className="home-hero-card" ref={heroCardRef}>
           <div className="home-hero-content">
-            <span className="home-hero-tag">Una guía para el corazón</span>
-            <h1 className="home-hero-title">Noviazgo</h1>
             <div className="home-hero-divider" />
+            <h1 className="home-hero-title">Noviazgo</h1>
+
             <p className="home-hero-subtitle">
               "El amor es paciente, es bondadoso. El amor no es envidioso ni
               jactancioso ni orgulloso. No se comporta con rudeza, no es
