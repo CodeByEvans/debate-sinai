@@ -8,6 +8,7 @@ import {
   FaClock,
 } from "react-icons/fa";
 import gsap from "gsap";
+import NavButtons from "../components/NavButtons";
 
 const principios = [
   {
@@ -107,6 +108,7 @@ function Principios() {
   return (
     <div className="principios-page">
       <div className="principios-bg-circle" />
+      <div className="principios-bookmark" />
       <div
         className="hero-section"
         ref={heroRef}
@@ -229,6 +231,7 @@ function Principios() {
             ),
           )}
         </div>
+        <NavButtons current="/principios" />
       </div>
     </div>
   );

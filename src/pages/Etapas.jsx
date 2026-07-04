@@ -1,6 +1,7 @@
 import { useRef, useLayoutEffect, useState } from "react";
 import { FaGlobeAmericas, FaCross, FaArrowRight } from "react-icons/fa";
 import gsap from "gsap";
+import NavButtons from "../components/NavButtons";
 
 const etapasMundo = [
   {
@@ -196,9 +197,8 @@ function Etapas() {
         {slide === 0 && (
           <>
             <div
+              className="etapas-grid"
               style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
                 gap: "2rem",
                 marginBottom: "2rem",
               }}
@@ -431,6 +431,7 @@ function Etapas() {
             </div>
           </>
         )}
+        <NavButtons current="/etapas" />
       </div>
 
       <svg

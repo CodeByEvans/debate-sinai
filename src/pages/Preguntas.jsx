@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FaQuestionCircle, FaReply, FaTrash, FaPlus, FaSync } from "react-icons/fa";
 import gsap from "gsap";
+import NavButtons from "../components/NavButtons";
 
 function Preguntas() {
   const [preguntas, setPreguntas] = useState([]);
@@ -9,6 +10,7 @@ function Preguntas() {
   const heroRef = useRef(null);
   const inputRef = useRef(null);
   const listRef = useRef(null);
+  const recargarRef = useRef(null);
 
   const cargarPreguntas = () => {
     setCargando(true);
@@ -58,7 +60,25 @@ function Preguntas() {
         { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", delay: 0.5 },
       );
     }
+
+    if (recargarRef.current) {
+      gsap.fromTo(
+        recargarRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", delay: 0.8 },
+      );
+    }
   }, []);
+
+  useEffect(() => {
+    if (!cargando && listRef.current) {
+      gsap.fromTo(
+        listRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" },
+      );
+    }
+  }, [cargando]);
 
   const agregarPregunta = () => {
     const texto = nuevaPregunta.trim();
@@ -146,7 +166,7 @@ function Preguntas() {
               "linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%)",
           }}
         >
-          <div style={{ display: "flex", gap: "0.75rem" }}>
+          <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
             <input
               type="text"
               value={nuevaPregunta}
@@ -155,6 +175,7 @@ function Preguntas() {
               placeholder="¿Qué duda tienes sobre el noviazgo cristiano?"
               style={{
                 flex: 1,
+                minWidth: "200px",
                 padding: "0.8rem 1rem",
                 borderRadius: "var(--radius-sm)",
                 border: "1px solid var(--border)",
@@ -173,6 +194,7 @@ function Preguntas() {
         </div>
 
         <div
+          ref={recargarRef}
           style={{
             display: "flex",
             justifyContent: "flex-end",
@@ -386,6 +408,7 @@ function Preguntas() {
             </p>
           </div>
         )}
+        <NavButtons current="/preguntas" />
       </div>
     </div>
   );

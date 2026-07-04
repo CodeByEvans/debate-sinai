@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import heroImage from "../assets/portada.jpeg";
 
@@ -38,7 +39,7 @@ function Home() {
       <div className="home-bg-circle" />
 
       <section className="home-hero-section">
-        <div className="home-hero-card" ref={heroCardRef}>
+        <Link to="/contenidos" className="home-hero-card" ref={heroCardRef}>
           <div className="home-hero-content">
             <div className="home-hero-divider" />
             <h1 className="home-hero-title">Noviazgo</h1>
@@ -53,7 +54,7 @@ function Home() {
           <div className="home-hero-image">
             <img src={heroImage} alt="Noviazgo" />
           </div>
-        </div>
+        </Link>
       </section>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import NavButtons from "../components/NavButtons";
 
 export const AutoPreguntas = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768) ;
@@ -12,6 +13,8 @@ export const AutoPreguntas = () => {
   return (
     <div className="noviazgo-page">
       <div className="noviazgo-bg-circle" />
+      <div className="noviazgo-bg-circle-right" />
+      <div className="noviazgo-bg-circle-bottom" />
       <div className="noviazgo-hero">
         <h1>Preparandome para el noviazgo</h1>
         <div className="noviazgo-divider" />
@@ -404,6 +407,7 @@ export const AutoPreguntas = () => {
           </div>
         </div>
       </div>
+        <NavButtons current="/autopreguntas" />
       </div>
     </div>
   );

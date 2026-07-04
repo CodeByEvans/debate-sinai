@@ -594,6 +594,9 @@
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.08);
   min-height: 420px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .home-hero-content {
@@ -753,10 +756,6 @@
   font-size: 0.82rem;
   color: #7B8599;
   line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .home-contenidos-arrow {
@@ -810,6 +809,33 @@
   left: -300px;
   width: 650px;
   height: 650px;
+  border-radius: 50%;
+  border: 3px solid rgba(62, 76, 108, 0.15);
+  background: #fff;
+  pointer-events: none;
+  box-shadow: 0 4px 60px rgba(62, 76, 108, 0.08), 0 1px 4px rgba(62, 76, 108, 0.06);
+}
+
+.noviazgo-bg-circle-right {
+  position: absolute;
+  top: 50%;
+  right: -250px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid rgba(62, 76, 108, 0.15);
+  background: #fff;
+  pointer-events: none;
+  box-shadow: 0 4px 60px rgba(62, 76, 108, 0.08), 0 1px 4px rgba(62, 76, 108, 0.06);
+  transform: translateY(-50%);
+}
+
+.noviazgo-bg-circle-bottom {
+  position: absolute;
+  bottom: -250px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   border: 3px solid rgba(62, 76, 108, 0.15);
   background: #fff;
@@ -879,6 +905,17 @@
   transform: rotate(180deg);
 }
 
+.etapas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .etapas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========== PRINCIPIOS PAGE ========== */
 .principios-page {
   background: #fff;
@@ -896,12 +933,24 @@
 .principios-bg-circle {
   position: absolute;
   bottom: -200px;
-  right: -200px;
+  left: -200px;
   width: 650px;
   height: 650px;
   border-radius: 50%;
   border: 2px solid rgba(62, 76, 108, 0.12);
   background: transparent;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.principios-bookmark {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 100px;
+  height: 30px;
+  background: #3E4C6C;
+  border-radius: 0 0 6px 6px;
   pointer-events: none;
   z-index: 0;
 }
@@ -943,6 +992,12 @@
   border-radius: 50%;
   background: rgb(255, 255, 255);
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .diferencias-img-col {
+    display: none;
+  }
 }
 
 /* Responsive home */

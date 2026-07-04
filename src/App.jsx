@@ -43,6 +43,7 @@ function App() {
 
   useEffect(() => {
     setMobileOpen(false);
+    window.scrollTo({ top: 0, behavior: "instant" });
     if (contentRef.current) {
       gsap.fromTo(
         contentRef.current,
