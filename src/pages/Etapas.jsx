@@ -163,7 +163,7 @@ function Etapas() {
   }, [slide]);
 
   return (
-    <div>
+    <div className="etapas-page">
       <div
         className="hero-section"
         ref={heroRef}
@@ -432,6 +432,23 @@ function Etapas() {
           </>
         )}
       </div>
+
+      <svg
+        className="etapas-bg-wave"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#3E4C6C"
+          opacity="0.07"
+          d="M0,96 C240,192 480,32 720,128 C960,224 1200,64 1440,128 L1440,320 L0,320 Z"
+        />
+        <path
+          fill="#3E4C6C"
+          opacity="0.05"
+          d="M0,160 C320,64 640,256 960,160 C1280,64 1440,220 1440,220 L1440,320 L0,320 Z"
+        />
+      </svg>
     </div>
   );
 }

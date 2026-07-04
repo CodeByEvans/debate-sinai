@@ -1,13 +1,16 @@
 import { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { FaBalanceScale, FaHeart, FaBible, FaQuestionCircle, FaArrowRight } from 'react-icons/fa'
+import { FaBalanceScale, FaHeart, FaBible, FaQuestionCircle, FaArrowRight, FaBookOpen } from 'react-icons/fa'
+import { MdFace } from 'react-icons/md'
 import gsap from 'gsap'
 
 const secciones = [
   { to: '/diferencias', Icon: FaBalanceScale, title: 'Diferencias', color: '#5B7DB1', desc: 'Compara el noviazgo según el mundo frente al noviazgo bíblico. Descubre las diferencias fundamentales.' },
   { to: '/etapas', Icon: FaHeart, title: 'Etapas', color: '#C5897A', desc: 'Explora las etapas de una relación: cómo avanza el mundo y cómo lo plantea la Biblia.' },
+  { to: '/autopreguntas', Icon: MdFace, title: 'Noviazgo', color: '#8E9FB5', desc: 'Prepárate para el noviazgo con preguntas de reflexión y el concepto de amistad especial.' },
   { to: '/modelo-biblico', Icon: FaBible, title: 'Modelo Bíblico', color: '#7B8FAA', desc: 'Cronograma del plan bíblico para una relación: amistad, amistad especial, noviazgo y matrimonio.' },
-  { to: '/preguntas', Icon: FaQuestionCircle, title: 'Preguntas', color: '#8E9FB5', desc: 'Plantea tus dudas sobre el noviazgo cristiano y recibe respuestas basadas en la Palabra.' },
+  { to: '/principios', Icon: FaBookOpen, title: 'Principios', color: '#6A8EAE', desc: 'Principios adicionales para una relación cristiana: pureza, oración, yugo desigual y más.' },
+  { to: '/preguntas', Icon: FaQuestionCircle, title: 'Preguntas', color: '#70809E', desc: 'Plantea tus dudas sobre el noviazgo cristiano y recibe respuestas basadas en la Palabra.' },
 ]
 
 function Contenidos() {

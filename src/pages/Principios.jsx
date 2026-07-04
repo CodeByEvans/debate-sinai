@@ -105,7 +105,8 @@ function Principios() {
   }, []);
 
   return (
-    <div>
+    <div className="principios-page">
+      <div className="principios-bg-circle" />
       <div
         className="hero-section"
         ref={heroRef}

@@ -795,6 +795,156 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* ========== NOVIAZGO PAGE (AutoPreguntas) ========== */
+.noviazgo-page {
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 2rem 4rem;
+}
+
+.noviazgo-bg-circle {
+  position: absolute;
+  top: -300px;
+  left: -300px;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 3px solid rgba(62, 76, 108, 0.15);
+  background: #fff;
+  pointer-events: none;
+  box-shadow: 0 4px 60px rgba(62, 76, 108, 0.08), 0 1px 4px rgba(62, 76, 108, 0.06);
+}
+
+.noviazgo-hero {
+  max-width: 1050px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.noviazgo-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  color: #3E4C6C;
+  margin-bottom: 1rem;
+}
+
+.noviazgo-hero .noviazgo-divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(62, 76, 108, 0.2);
+  margin: 0 auto 1rem;
+  border-radius: 1px;
+}
+
+.noviazgo-hero .noviazgo-subtitle {
+  color: #4A5468;
+  font-size: 1.05rem;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.noviazgo-content {
+  max-width: 1050px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========== ETAPAS PAGE ========== */
+.etapas-page {
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.etapas-page .hero-section,
+.etapas-page .page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.etapas-bg-wave {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(180deg);
+}
+
+/* ========== PRINCIPIOS PAGE ========== */
+.principios-page {
+  background: #fff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.principios-page .hero-section,
+.principios-page .page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.principios-bg-circle {
+  position: absolute;
+  bottom: -200px;
+  right: -200px;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 2px solid rgba(62, 76, 108, 0.12);
+  background: transparent;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========== DIFERENCIAS PAGE ========== */
+.diferencias-page {
+  background: #3E4C6C;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 2rem 4rem;
+}
+
+.diferencias-page .hero-section,
+.diferencias-page .page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.diferencias-page .hero-section h1,
+.diferencias-page .hero-section h1 .accent {
+  color: #fff;
+}
+
+.diferencias-page .hero-section .subtitle {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.diferencias-page .hero-section .divider {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.diferencias-bg-circle {
+  position: absolute;
+  bottom: -400px;
+  right: -400px;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  pointer-events: none;
+}
+
 /* Responsive home */
 @media (max-width: 900px) {
   .home-hero-card {
@@ -830,6 +980,39 @@
     width: 500px;
     height: 500px;
     top: -100px;
+  }
+
+  .noviazgo-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .noviazgo-bg-circle {
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: -200px;
+  }
+
+  .noviazgo-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .principios-bg-circle {
+    width: 380px;
+    height: 380px;
+    bottom: -140px;
+    right: -140px;
+  }
+
+  .diferencias-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .diferencias-bg-circle {
+    width: 500px;
+    height: 500px;
+    bottom: -200px;
+    right: -200px;
   }
 }
 

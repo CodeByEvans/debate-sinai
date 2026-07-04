@@ -10,17 +10,17 @@ export const AutoPreguntas = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="section detalles-section">
-      <div className="hero-section" style={{ padding: "3.5rem 2rem 3rem" }}>
-        <h1 style={{ fontSize: "2.8rem" }}>
-          <span className="accent">Preparandome para el noviazgo</span>
-        </h1>
-        <div className="divider" />
-        <p className="subtitle">
+    <div className="noviazgo-page">
+      <div className="noviazgo-bg-circle" />
+      <div className="noviazgo-hero">
+        <h1>Preparandome para el noviazgo</h1>
+        <div className="noviazgo-divider" />
+        <p className="noviazgo-subtitle">
           Describiendo conceptos con más profundiad & preguntas que sería bueno
           hacerse
         </p>
       </div>
+      <div className="noviazgo-content">
       <div
         style={{
           marginBottom: "20px",
@@ -404,7 +404,8 @@ export const AutoPreguntas = () => {
           </div>
         </div>
       </div>
-    </section>
+      </div>
+    </div>
   );
 };
 

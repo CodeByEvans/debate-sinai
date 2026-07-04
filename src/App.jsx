@@ -27,12 +27,12 @@ import "./App.css";
 
 const navItems = [
   { path: "/", label: "Inicio", Icon: FaHome },
+  { path: "/contenidos", label: "Contenidos", Icon: FaThLarge },
   { path: "/diferencias", label: "Diferencias", Icon: FaBalanceScale },
   { path: "/etapas", label: "Etapas", Icon: FaHeart },
   { path: "/autopreguntas", label: "Noviazgo", Icon: MdFace },
   { path: "/principios", label: "Principios", Icon: FaBookOpen },
   { path: "/preguntas", label: "Preguntas", Icon: FaQuestionCircle },
-  { path: "/contenidos", label: "Contenidos", Icon: FaThLarge },
 ];
 
 function App() {

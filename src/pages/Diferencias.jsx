@@ -40,7 +40,8 @@ function Diferencias() {
   }, []);
 
   return (
-    <div>
+    <div className="diferencias-page">
+      <div className="diferencias-bg-circle" />
       <div
         className="hero-section"
         ref={heroRef}
