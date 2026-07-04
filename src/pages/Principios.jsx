@@ -12,13 +12,13 @@ import gsap from "gsap";
 const principios = [
   {
     Icon: FaHandHoldingHeart,
-    color: "#C25A4A",
+    color: "#3E4C6C",
     title: "Pureza y propiedad del cuerpo",
     desc: "No tienes ninguna propiedad del cuerpo de otra persona hasta que te cases; hasta ese momento es única y exclusivamente de Dios, y donde vayan nuestras manos es terreno santo.",
   },
   {
     Icon: FaPray,
-    color: "#8B6E4A",
+    color: "#4A5A7A",
     title: "Relación con Dios en pareja",
     desc: "Muy importante cultivar una relación con Dios juntos, pero también una relación íntima y personal con Dios. Si buscamos esto tendremos la ayuda y corrección del mejor. También escuchar el consejo de nuestros líderes y de nuestros padres, porque como Dios, solo quieren lo mejor para nosotros.",
     versiculo:
@@ -27,7 +27,7 @@ const principios = [
   },
   {
     Icon: FaPrayingHands,
-    color: "#6A8D73",
+    color: "#546484",
     title: "Oración mutua",
     desc: "Orar el uno por el otro. Cobertura espiritual, dirección, ayuda en la prueba, etc.",
     versiculo:
@@ -36,7 +36,7 @@ const principios = [
   },
   {
     Icon: FaHeart,
-    color: "#B8945A",
+    color: "#5F7094",
     title: "Los sentimientos: importantes, no determinantes",
     desc: "El corazón engaña y se necesita siempre el consejo externo de líderes y padres.",
     versiculo:
@@ -45,7 +45,7 @@ const principios = [
   },
   {
     Icon: FaLink,
-    color: "#7A5A4A",
+    color: "#6A7A9E",
     title: "No unirse en yugo desigual",
     desc: "Dios lo prohibe. Es bueno juntarse con gente que alimente tu fe, quien hace lo contrario más que ayudarte, está haciendote un mal. Y aceptar una relación con el proposito de convertir es un experimento de gran riesgo, podría salir mal y que la persona se convierta, podría salir mal y que la persona se llegue a enemistar con Dios, que también te apartes... muchos escenarios malos contra un unico escenario bueno, el cual es que se convierta genuinamente.",
     versiculo:
@@ -54,7 +54,7 @@ const principios = [
   },
   {
     Icon: FaClock,
-    color: "#8B9D6B",
+    color: "#7585A6",
     title: "El tiempo de conocerse",
     desc: "Es muy importante dedicar mucho tiempo para conocerse y ponerse en manos de Dios.",
     extra: "Amistades Especiales largas — Noviazgos cortos — Matrimonio feliz",

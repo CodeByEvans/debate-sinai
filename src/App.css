@@ -314,7 +314,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(45, 36, 22, 0.4);
+    background: rgba(30, 36, 51, 0.4);
     backdrop-filter: blur(2px);
     z-index: 90;
   }
@@ -435,8 +435,8 @@
 }
 
 .tag-mundo {
-  background: #FDF2F0;
-  color: #C25A4A;
+  background: #EDEFF4;
+  color: #3E4C6C;
 }
 
 .tag-biblico {
@@ -480,13 +480,13 @@
 
 .btn-danger {
   background: transparent;
-  border-color: #E0C0B8;
-  color: #A0524A;
+  border-color: #D1D6DF;
+  color: #4A5468;
 }
 
 .btn-danger:hover {
-  background: #FDF2F0;
-  border-color: #C25A4A;
+  background: #EDEFF4;
+  border-color: #3E4C6C;
 }
 
 /* ========== VERSE BLOCK ========== */
@@ -554,4 +554,307 @@
 
 .detalles-section {
   padding: 0 40px;
+}
+
+/* ========== HOME PAGE ========== */
+.home-page {
+  background: #3E4C6C;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 2rem 4rem;
+}
+
+.home-bg-circle {
+  position: absolute;
+  top: -60px;
+  right : -500px;
+  width: 1400px;
+  height: 1400px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  pointer-events: none;
+}
+
+.home-hero-section {
+  max-width: 1050px;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero-card {
+  background: #FFFFFF;
+  border-radius: 28px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.08);
+  min-height: 420px;
+}
+
+.home-hero-content {
+  flex: 1.1;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-hero-tag {
+  display: inline-flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #3E4C6C;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 1.2rem;
+  background: rgba(62, 76, 108, 0.08);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+.home-hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #1E2433;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.home-hero-divider {
+  width: 50px;
+  height: 3px;
+  background: #3E4C6C;
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.home-hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: #4A5468;
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+.home-hero-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #EDEFF4 0%, #DCE0E8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-hero-image-placeholder {
+  font-size: 5rem;
+  color: #3E4C6C;
+  opacity: 0.25;
+}
+
+/* Contenidos Section */
+.home-contenidos-section {
+  max-width: 1050px;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.home-contenidos-card {
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18), 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.home-contenidos-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #1E2433;
+  margin-bottom: 0.5rem;
+}
+
+.home-contenidos-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #7B8599;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.home-contenidos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.home-contenidos-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  background: #F8F9FC;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.home-contenidos-item:hover {
+  background: #EDEFF4;
+  border-color: #DCE0E8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.home-contenidos-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.home-contenidos-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-contenidos-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1E2433;
+  margin-bottom: 0.2rem;
+}
+
+.home-contenidos-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #7B8599;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-contenidos-arrow {
+  color: #B0B9C8;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  transition: all 0.3s ease;
+}
+
+.home-contenidos-item:hover .home-contenidos-arrow {
+  color: #3E4C6C;
+  transform: translateX(3px);
+}
+
+/* Verse block on dark bg */
+.home-verse {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-verse::before {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.home-verse p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.home-verse footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive home */
+@media (max-width: 900px) {
+  .home-hero-card {
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+
+  .home-hero-content {
+    padding: 2rem 1.75rem;
+  }
+
+  .home-hero-title {
+    font-size: 2.6rem;
+  }
+
+  .home-hero-image {
+    height: 220px;
+  }
+
+  .home-contenidos-card {
+    padding: 2rem 1.75rem;
+  }
+
+  .home-contenidos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .home-bg-circle {
+    width: 500px;
+    height: 500px;
+    top: -100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero-content {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .home-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .home-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .home-hero-image {
+    height: 180px;
+  }
+
+  .home-contenidos-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .home-contenidos-title {
+    font-size: 1.8rem;
+  }
 }

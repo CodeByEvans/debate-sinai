@@ -82,7 +82,7 @@ function Diferencias() {
               className="card"
               style={{
                 backfaceVisibility: "hidden",
-                borderTop: "4px solid #C25A4A",
+                borderTop: "4px solid #3E4C6C",
                 padding: "2rem 2.25rem",
               }}
             >
@@ -95,7 +95,7 @@ function Diferencias() {
                 }}
               >
                 <FaGlobeAmericas
-                  style={{ color: "#C25A4A", fontSize: "1.3rem" }}
+                  style={{ color: "#3E4C6C", fontSize: "1.3rem" }}
                 />
                 <span className="tag tag-mundo">Visión del Mundo</span>
               </div>
@@ -143,14 +143,14 @@ function Diferencias() {
                     key={label}
                     style={{
                       paddingLeft: "0.5rem",
-                      borderLeft: "2px solid #FDF2F0",
+                      borderLeft: "2px solid #EDEFF4",
                     }}
                   >
                     <span
                       style={{
                         fontWeight: 600,
                         fontSize: "0.85rem",
-                        color: "#C25A4A",
+                        color: "#3E4C6C",
                       }}
                     >
                       {label}
@@ -173,9 +173,9 @@ function Diferencias() {
                 style={{
                   marginTop: "1.5rem",
                   padding: "1.25rem 1.5rem",
-                  background: "#FDF2F0",
+                  background: "#EDEFF4",
                   borderRadius: "var(--radius-sm)",
-                  borderLeft: "3px solid #C25A4A",
+                  borderLeft: "3px solid #3E4C6C",
                 }}
               >
                 <p
@@ -197,7 +197,7 @@ function Diferencias() {
                 <span
                   style={{
                     fontSize: "0.85rem",
-                    color: "#C25A4A",
+                    color: "#3E4C6C",
                     fontWeight: 600,
                   }}
                 >

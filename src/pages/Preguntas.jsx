@@ -300,7 +300,7 @@ function Preguntas() {
                           width: "32px",
                           height: "32px",
                           borderRadius: "8px",
-                          background: "#E8F0E4",
+                          background: "#EDEFF4",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -308,7 +308,7 @@ function Preguntas() {
                         }}
                       >
                         <FaReply
-                          style={{ color: "#6A8D73", fontSize: "0.85rem" }}
+                          style={{ color: "#3E4C6C", fontSize: "0.85rem" }}
                         />
                       </div>
                       <h4

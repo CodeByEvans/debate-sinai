@@ -11,6 +11,7 @@ import {
   FaTimes,
   FaChevronLeft,
   FaChevronRight,
+  FaThLarge,
 } from "react-icons/fa";
 import { MdFace } from "react-icons/md";
 import gsap from "gsap";
@@ -21,6 +22,7 @@ import ModeloBiblico from "./pages/ModeloBiblico.jsx";
 import Preguntas from "./pages/Preguntas.jsx";
 import Principios from "./pages/Principios.jsx";
 import AutoPreguntas from "./pages/AutoPreguntas.jsx";
+import Contenidos from "./pages/Contenidos.jsx";
 import "./App.css";
 
 const navItems = [
@@ -30,6 +32,7 @@ const navItems = [
   { path: "/autopreguntas", label: "Noviazgo", Icon: MdFace },
   { path: "/principios", label: "Principios", Icon: FaBookOpen },
   { path: "/preguntas", label: "Preguntas", Icon: FaQuestionCircle },
+  { path: "/contenidos", label: "Contenidos", Icon: FaThLarge },
 ];
 
 function App() {
@@ -154,6 +157,7 @@ function App() {
           <Route path="/modelo-biblico" element={<ModeloBiblico />} />
           <Route path="/preguntas" element={<Preguntas />} />
           <Route path="/principios" element={<Principios />} />
+          <Route path="/contenidos" element={<Contenidos />} />
         </Routes>
       </main>
     </div>

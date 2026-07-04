@@ -59,7 +59,7 @@ export const AutoPreguntas = () => {
                 style={{
                   textAlign: "center",
                   fontWeight: 700,
-                  color: "#4f6a8f",
+                  color: "#546484",
                   fontSize: "0.85rem",
                   letterSpacing: "0.04em",
                   textTransform: "uppercase",
@@ -81,7 +81,7 @@ export const AutoPreguntas = () => {
                 <div
                   style={{
                     padding: "0.65rem 1rem",
-                    background: "#4f6a8f",
+                    background: "#546484",
                     borderRadius: "8px",
                     fontWeight: 600,
                     fontSize: "0.88rem",
@@ -93,7 +93,7 @@ export const AutoPreguntas = () => {
                 </div>
                 <span
                   style={{
-                    color: "#4f6a8f",
+                    color: "#546484",
                     fontSize: "1.2rem",
                     fontWeight: 300,
                   }}
@@ -103,7 +103,7 @@ export const AutoPreguntas = () => {
                 <div
                   style={{
                     padding: "0.65rem 1rem",
-                    background: "#88a2bc",
+                    background: "#70809E",
                     borderRadius: "8px",
                     fontWeight: 600,
                     fontSize: "0.88rem",
@@ -160,7 +160,7 @@ export const AutoPreguntas = () => {
                 style={{
                   textAlign: "center",
                   fontWeight: 700,
-                  color: "#efb680",
+                  color: "#3E4C6C",
                   fontSize: "0.85rem",
                   letterSpacing: "0.04em",
                   textTransform: "uppercase",
@@ -182,7 +182,7 @@ export const AutoPreguntas = () => {
                 <div
                   style={{
                     padding: "0.65rem 1rem",
-                    background: "#efb680",
+                    background: "#3E4C6C",
                     borderRadius: "8px",
                     fontWeight: 600,
                     fontSize: "0.88rem",
@@ -194,7 +194,7 @@ export const AutoPreguntas = () => {
                 </div>
                 <span
                   style={{
-                    color: "#efb680",
+                    color: "#3E4C6C",
                     fontSize: "1.2rem",
                     fontWeight: 300,
                   }}
@@ -204,7 +204,7 @@ export const AutoPreguntas = () => {
                 <div
                   style={{
                     padding: "0.65rem 1rem",
-                    background: "#d99477",
+                    background: "#4A5A7A",
                     borderRadius: "8px",
                     fontWeight: 600,
                     fontSize: "0.88rem",
@@ -243,14 +243,14 @@ export const AutoPreguntas = () => {
         <div
           className="card"
           style={{
-            borderLeft: "4px solid #B8945A",
+            borderLeft: "4px solid #3E4C6C",
             padding: "1.5rem 1.75rem",
           }}
         >
           <h3
             style={{
               fontSize: "1.2rem",
-              color: "#B8945A",
+              color: "#3E4C6C",
               marginBottom: "1rem",
             }}
           >

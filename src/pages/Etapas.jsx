@@ -176,7 +176,7 @@ function Etapas() {
         <p className="subtitle">
           <span
             style={{
-              color: "#4f6a8f",
+              color: "#546484",
             }}
           >
             Las etapas que siguen las personas que no conocen a Cristo{" "}
@@ -184,7 +184,7 @@ function Etapas() {
           y{" "}
           <span
             style={{
-              color: "#d99477",
+              color: "#3E4C6C",
             }}
           >
             las etapas que deberiamos seguir los cristianos
@@ -214,7 +214,7 @@ function Etapas() {
                   }}
                 >
                   <FaGlobeAmericas
-                    style={{ color: "#C25A4A", fontSize: "1.2rem" }}
+                    style={{ color: "#3E4C6C", fontSize: "1.2rem" }}
                   />
                   <span className="tag tag-mundo">Visión del Mundo</span>
                 </div>
@@ -235,7 +235,7 @@ function Etapas() {
                       bottom: 0,
                       width: "2px",
                       background:
-                        "linear-gradient(to bottom, #C25A4A44, #C25A4A22)",
+                        "linear-gradient(to bottom, rgba(62,76,108,0.27), rgba(62,76,108,0.13))",
                     }}
                   />
                   {etapasMundo.map((stage) => (
@@ -258,9 +258,9 @@ function Etapas() {
                           width: "12px",
                           height: "12px",
                           borderRadius: "50%",
-                          background: "#C25A4A",
+                          background: "#3E4C6C",
                           border: "3px solid white",
-                          boxShadow: "0 0 0 2px #C25A4A44",
+                          boxShadow: "0 0 0 2px rgba(62,76,108,0.27)",
                           zIndex: 1,
                         }}
                       />
@@ -277,7 +277,7 @@ function Etapas() {
                             fontFamily: "'Cormorant Garamond', serif",
                             fontSize: "2rem",
                             fontWeight: 700,
-                            color: "#C25A4A",
+                            color: "#3E4C6C",
                             opacity: 0.3,
                             lineHeight: 1,
                           }}
